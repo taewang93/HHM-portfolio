@@ -1,0 +1,44 @@
+:root {
+  --color-black: #000;
+  --color-black000: #0a0a0a;
+  --color-black200: #222;
+  --color-gray: #666;
+  --color-yellow: #faf359;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+body {
+  font-family: "Montserrat", "Pretendard", sans-serif;
+  font-size: 18px;
+  color: var(--color-gray);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
