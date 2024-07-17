@@ -41,8 +41,17 @@
     transform: translateY(-50%);
     width: 374px;
     height: 374px;
-    border-radius: 374px;
-    background-color: var(--color-yellow);
+
+    .main_visual_circle {
+      width: 374px;
+      height: 374px;
+      border-radius: 374px;
+      background-color: var(--color-yellow);
+      position: relative;
+      transform: translateX(0);
+
+      animation: moveCircle 3s infinite linear;
+    }
 
     .glass_box {
       display: flex;
@@ -51,7 +60,7 @@
       left: 50%;
       top: 50%;
       transform: translateY(-50%);
-      width: 300px;
+      width: 200px;
       height: 800px;
       overflow: hidden;
       background: linear-gradient(
@@ -322,5 +331,18 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 16px 0px #00000026;
+  }
+}
+
+@keyframes moveCircle {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+
+  100% {
+    transform: translateX(0px);
   }
 }
